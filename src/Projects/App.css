@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #214868;
+  font-family: Arial, sans-serif;
+}
+
+.navigation button {
+  color: white;
+  border-color: white;
+  transition: transform 300ms;
+  padding: 0;
+}
+
+.navigation button:hover {
+  color: #47f61c;
+  border-color: #47f61c;
+  transform: translatey(-3px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.social-container {
+  background: transparent;
+  padding: 5px 5px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translatey(-3px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.Github {
+  color: #020c15;
+}
+.cv-button {
+  /* Smooth transition on hover-related properties */
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); /* Ultra-smooth bezier curve */
+  transform-origin: center; /* Makes scaling feel natural */
+}
+
+.cv-button:hover {
+  transform: translateY(-6px) scale(1.1); /* Slightly higher lift and scaling */
+  background: linear-gradient(
+    90deg,
+    #47f61c,
+    #a6f93c
+  ); /* Subtle color gradient */
+  color: black; /* Smooth transition for text color */
+  box-shadow: 0px 12px 30px rgba(71, 246, 28, 0.5); /* Glow effect */
+  filter: brightness(1.1); /* Slight glow effect for the entire button */
+}
+
+@keyframes hover-glow {
+  0% {
+    box-shadow: 0px 8px 20px rgba(71, 246, 28, 0.4);
+  }
+  50% {
+    box-shadow: 0px 12px 35px rgba(71, 246, 28, 0.6);
+  }
+  100% {
+    box-shadow: 0px 8px 20px rgba(71, 246, 28, 0.4);
+  }
+}
+
+.cv-button:hover {
+  animation: hover-glow 1s infinite; /* Glow animation during hover */
+}
+
+.custom-span {
+  position: relative;
+}
+
+.custom-span::before {
+  color: #47f61c; /* Green color */
+  content: "Web developer";
+  animation: words 20s infinite;
+}
+
+.custom-span::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid transparent;
+  right: -8px;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-right: 3px solid #47f61c;
+  }
+}
+
+@keyframes words {
+  0%,
+  2% {
+    content: "youtuber";
+  }
+  21%,
+  40% {
+    content: "programmer";
+  }
+  41%,
+  60% {
+    content: "Web designer";
+  }
+  61%,
+  80% {
+    content: "Coder";
+  }
+  81%,
+  100% {
+    content: "script writer";
+  }
+}

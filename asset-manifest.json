@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/level2-Website/static/css/main.53357a7e.css",
+    "main.js": "/level2-Website/static/js/main.5eb8116d.js",
+    "static/js/453.c5932eb1.chunk.js": "/level2-Website/static/js/453.c5932eb1.chunk.js",
+    "static/media/M_C_C.jpg": "/level2-Website/static/media/M_C_C.a1a64f96d3ab6249757b.jpg",
+    "index.html": "/level2-Website/index.html",
+    "main.53357a7e.css.map": "/level2-Website/static/css/main.53357a7e.css.map",
+    "main.5eb8116d.js.map": "/level2-Website/static/js/main.5eb8116d.js.map",
+    "453.c5932eb1.chunk.js.map": "/level2-Website/static/js/453.c5932eb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53357a7e.css",
+    "static/js/main.5eb8116d.js"
+  ]
+}
